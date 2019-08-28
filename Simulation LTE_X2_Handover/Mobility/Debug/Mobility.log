@@ -1,0 +1,73 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(368,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  Sumo_interface.c
+c:\users\sony\desktop\lte_x2_handover\simulation lte_x2_handover\mobility\sumo_interface.c(119): warning C4133: 'function': incompatible types - from 'LPCWSTR' to 'LPCSTR'
+c:\users\sony\desktop\lte_x2_handover\simulation lte_x2_handover\mobility\sumo_interface.c(109): warning C4133: 'initializing': incompatible types - from 'char [26]' to 'LPCWSTR'
+c:\users\sony\desktop\lte_x2_handover\simulation lte_x2_handover\mobility\sumo_interface.c(105): warning C4101: 'cbRead': unreferenced local variable
+  NodeJoin.c
+  Mobility.c
+c:\users\sony\desktop\lte_x2_handover\simulation lte_x2_handover\mobility\mobility.c(203): warning C4013: 'FileBasedMobilityReadingFile' undefined; assuming extern returning int
+c:\users\sony\desktop\lte_x2_handover\simulation lte_x2_handover\mobility\mobility.c(319): warning C4013: 'process_mobility_event' undefined; assuming extern returning int
+  GroupMobility.c
+  FileBasedMobility.c
+  Generating Code...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1189,5): warning MSB8012: TargetPath(C:\Users\Sony\Desktop\LTE_X2_Handover\Simulation LTE_X2_Handover\Mobility\..\Dll\Mobility.dll) does not match the Linker's OutputFile property value (C:\Users\Sony\Desktop\LTE_X2_Handover\Simulation LTE_X2_Handover\Dll\libMobility.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1191,5): warning MSB8012: TargetName(Mobility) does not match the Linker's OutputFile property value (libMobility). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+FileBasedMobility.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
+     Creating library ..\Dll\Mobility.lib and object ..\Dll\Mobility.exp
+FileBasedMobility.obj : error LNK2019: unresolved external symbol _fnpAllocateMemory_dbg referenced in function _add_mobility_event
+Mobility.obj : error LNK2001: unresolved external symbol _fnpAllocateMemory_dbg
+NodeJoin.obj : error LNK2001: unresolved external symbol _fnpAllocateMemory_dbg
+Sumo_interface.obj : error LNK2001: unresolved external symbol _fnpAllocateMemory_dbg
+FileBasedMobility.obj : error LNK2019: unresolved external symbol _fnpFreeMemory_dbg referenced in function _FileBasedMobilityPointersFree
+Mobility.obj : error LNK2001: unresolved external symbol _fnpFreeMemory_dbg
+NodeJoin.obj : error LNK2001: unresolved external symbol _fnpFreeMemory_dbg
+Sumo_interface.obj : error LNK2001: unresolved external symbol _fnpFreeMemory_dbg
+Sumo_interface.obj : error LNK2019: unresolved external symbol _fnAddEvent_F referenced in function _corr
+FileBasedMobility.obj : error LNK2001: unresolved external symbol _fnAddEvent_F
+GroupMobility.obj : error LNK2001: unresolved external symbol _fnAddEvent_F
+Mobility.obj : error LNK2001: unresolved external symbol _fnAddEvent_F
+NodeJoin.obj : error LNK2001: unresolved external symbol _fnAddEvent_F
+FileBasedMobility.obj : error LNK2019: unresolved external symbol _lskip referenced in function _FileBasedMobilityReadingFile
+Sumo_interface.obj : error LNK2001: unresolved external symbol __imp__NETWORK
+FileBasedMobility.obj : error LNK2001: unresolved external symbol __imp__NETWORK
+GroupMobility.obj : error LNK2001: unresolved external symbol __imp__NETWORK
+Mobility.obj : error LNK2001: unresolved external symbol __imp__NETWORK
+NodeJoin.obj : error LNK2001: unresolved external symbol __imp__NETWORK
+Sumo_interface.obj : error LNK2001: unresolved external symbol __imp__pstruEventDetails
+FileBasedMobility.obj : error LNK2001: unresolved external symbol __imp__pstruEventDetails
+GroupMobility.obj : error LNK2001: unresolved external symbol __imp__pstruEventDetails
+Mobility.obj : error LNK2001: unresolved external symbol __imp__pstruEventDetails
+NodeJoin.obj : error LNK2001: unresolved external symbol __imp__pstruEventDetails
+GroupMobility.obj : error LNK2019: unresolved external symbol _fnpReAllocateMemory_dbg referenced in function _add_to_group
+Mobility.obj : error LNK2001: unresolved external symbol _fnpReAllocateMemory_dbg
+NodeJoin.obj : error LNK2001: unresolved external symbol _fnpReAllocateMemory_dbg
+GroupMobility.obj : error LNK2019: unresolved external symbol _list_alloc_dbg referenced in function _group_add_new
+NodeJoin.obj : error LNK2001: unresolved external symbol _list_alloc_dbg
+GroupMobility.obj : error LNK2019: unresolved external symbol _list_next referenced in function _fn_NetSim_Mobility_Group_init
+NodeJoin.obj : error LNK2001: unresolved external symbol _list_next
+GroupMobility.obj : error LNK2019: unresolved external symbol _list_add_last referenced in function _group_add_new
+NodeJoin.obj : error LNK2001: unresolved external symbol _list_add_last
+GroupMobility.obj : error LNK2019: unresolved external symbol _fn_NetSim_Anim_MoveNode referenced in function _fn_NetSim_MoveGroup
+Mobility.obj : error LNK2001: unresolved external symbol _fn_NetSim_Anim_MoveNode
+Sumo_interface.obj : error LNK2001: unresolved external symbol _fn_NetSim_Anim_MoveNode
+Mobility.obj : error LNK2019: unresolved external symbol __strdup_dbg1 referenced in function _fn_NetSim_Mobility_Configure
+NodeJoin.obj : error LNK2001: unresolved external symbol __strdup_dbg1
+Mobility.obj : error LNK2019: unresolved external symbol _fn_NetSim_Utilities_GenerateRandomNo referenced in function _fn_NMo_RandomPoint
+Mobility.obj : error LNK2019: unresolved external symbol _fn_NetSim_xmlConfig_GetVal referenced in function _fn_NetSim_Mobility_Configure
+Mobility.obj : error LNK2019: unresolved external symbol _NetSimxmlError referenced in function _fn_NetSim_Mobility_Configure
+Mobility.obj : error LNK2019: unresolved external symbol _GetXmlVal referenced in function _fn_NetSim_Mobility_Configure
+NodeJoin.obj : error LNK2001: unresolved external symbol _GetXmlVal
+Mobility.obj : error LNK2019: unresolved external symbol _ReportError referenced in function _fn_NetSim_Mobility_Configure
+Sumo_interface.obj : error LNK2001: unresolved external symbol _ReportError
+Mobility.obj : error LNK2019: unresolved external symbol _convert_3D_to_lat_lon referenced in function _fn_NetSim_Mobility_Run
+Sumo_interface.obj : error LNK2001: unresolved external symbol _convert_3D_to_lat_lon
+Mobility.obj : error LNK2001: unresolved external symbol __imp__pszAppPath
+Mobility.obj : error LNK2001: unresolved external symbol __imp__pszIOPath
+Sumo_interface.obj : error LNK2001: unresolved external symbol __imp__animFlag
+..\lib\Mobility.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+..\lib\NetworkStack.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+..\lib\Metrics.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+..\lib\MemoryBlock.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+..\lib\IP_Addressing.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+..\lib\NetSim_utility.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+..\Dll\libMobility.dll : fatal error LNK1120: 21 unresolved externals
